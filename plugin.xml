@@ -2,12 +2,12 @@
 
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    id="org.transistorsoft.cordova.background-geolocation"
-    version="0.3.6">
-    <name>CDVBackgroundGeoLocation</name>
+    id="ca.zyra.cordova.background-geolocation"
+    version="0.4.0">
+    <name>IHBackgroundGeoLocation</name>
     <description>Cordova Background GeoLocation Plugin</description>
     <license>MIT</license>
-    <keywords>phonegap,background geolocation</keywords>
+    <keywords>cordova,ionic,phonegap,background geolocation</keywords>
 
     <engines>
         <engine name="cordova" version=">=3.0.0" />
@@ -33,7 +33,7 @@
         <source-file src="src/android/notification.png" target-dir="res/drawable" />
 
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
-            <service android:name="com.tenforwardconsulting.cordova.bgloc.LocationUpdateService" android:enabled="true" android:process=":remote" />
+            <service android:name="ca.zyra.cordova.bgloc.LocationUpdateService" android:enabled="true" android:process=":remote" />
         </config-file>
 
         <config-file target="AndroidManifest.xml" parent="/manifest">
@@ -46,7 +46,7 @@
         </config-file>   
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="BackgroundGeoLocation">
-                <param name="android-package" value="com.tenforwardconsulting.cordova.bgloc.BackgroundGpsPlugin"/>
+                <param name="android-package" value="ca.zyra.cordova.bgloc.BackgroundGpsPlugin"/>
             </feature>
         </config-file> 
      </platform>          

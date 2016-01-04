@@ -1,4 +1,4 @@
-package com.tenforwardconsulting.cordova.bgloc;
+package ca.zyra.cordova.bgloc;
 
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaPlugin;
