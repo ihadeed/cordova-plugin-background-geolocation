@@ -116,7 +116,7 @@ First, copy the `SampleApp` out of the repo and into any folder you wish (eg: `t
 ```
 $ cp -R cordova-plugin-background-geolocation/example/SampleApp ./tmp
 $ cd tmp/SampleApp
-$ cordova plugin add https://github.com/christocracy/cordova-plugin-background-geolocation.git
+$ cordova plugin add https://github.com/ihadeed/cordova-plugin-background-geolocation.git
 $ cordova plugin add cordova-plugin-whitelist
 $ cordova platform add ios
 $ cordova build ios
@@ -143,7 +143,7 @@ On iOS the plugin will execute your configured ```callbackFn```. You may manuall
 
 Android **WILL NOT** execute your configured ```callbackFn```.  The plugin manages sync-ing GeoLocations to your server automatically, using the configured ```url```, ```params``` and ```headers```.  Since the Android plugin must run as an autonomous Background Service, disconnected from your the main Android Activity (your foreground application), the background-geolocation plugin will continue to run, even if the foreground Activity is killed due to memory constraints.  This is why the Android plugin cannot execute the Javascript ```callbackFn```, since your app is not guaranteed to keep running -- syncing locations to the server must be handled by the plugin.
 
-The Android plugin sends an HTTP POST to your configured ```url``` with ```Content-Type: application/json```.  The JSON location-data is encoded into the Request Body.  PHP people have [trouble with this](https://github.com/christocracy/cordova-plugin-background-geolocation/issues/50).  In PHP, find the raw JSON body with:
+The Android plugin sends an HTTP POST to your configured ```url``` with ```Content-Type: application/json```.  The JSON location-data is encoded into the Request Body.  PHP people have [trouble with this](https://github.com/ihadeed/cordova-plugin-background-geolocation/issues/50).  In PHP, find the raw JSON body with:
 
 ```$data = file_get_contents('php://input');```.
 
@@ -266,4 +266,4 @@ In Windows Phone, the underlying GeoLocator you can choose to use 'DesiredAccura
 
 [Apache License](https://github.com/ihadeed/cordova-plugin-background-geolocation/blob/master/LICENSE)
 
-Copyright (c) 2013 Christopher Scott, Transistor Software
+Copyright (c) 2013 Christopher Scott, Transistor Software ( Original developer )
