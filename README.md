@@ -1,21 +1,7 @@
-Premium Version
+Background GeoLocation Plugin
 ==============================
 
-A new [Premium Version](http://transistorsoft.github.io/cordova-background-geolocation/) is available.
-- Implements the latest Android Fused GeoLocation and ActivityRecognition APIs for **much-improved** battery performance.
-- Auto-start Android & iOS on device-boot.
-- Android now executes your ```callback``` just like **iOS**!
-- Both iOS & Android can optionally **HTTP** POST locations to your server in the native code.  Optional **batch-mode**.
-- Native **SQLite persistence** layer (for when no network is available).  Plugin provides a javascript API to fetch and/or sync the locations to your server.
-- **Geofencing**.  Both iOS and Android allow you to add arbitrary circular geofences which execute your javascript-callback when a crossing-event occurs.
-
-![Android Battery Performance](/images/Screenshot-android-battery-framed.png "Android battery performance")
-![SampleApp](/images/Screenshot-android-map1-framed.png "SampleApp")
-
-BackgroundGeoLocation
-==============================
-
-Cross-platform background geolocation for Cordova / PhoneGap with battery-saving "circular region monitoring" and "stop detection".
+Cross-platform background GeoLocation for Cordova / PhoneGap with battery-saving "circular region monitoring" and "stop detection".
 
 ![distanceFilter at highway speed](/images/distance-filter-highway.png "distanceFilter at highway speed")
 
@@ -36,7 +22,7 @@ The plugin creates the object `window.BackgroundGeolocation` with the methods
 
 ```
 
-   cordova plugin add https://github.com/christocracy/cordova-plugin-background-geolocation.git
+   cordova plugin add https://github.com/ihadeed/cordova-plugin-background-geolocation.git
 ```
 
 **ACHTUNG!** If you're not using **Cordova 5.x**, you must use the tagged branch ```#cordova-4.x``` to install the plugin, like this (Because Cordova has [migrated to npm](https://cordova.apache.org/announcements/2015/04/21/plugins-release-and-move-to-npm.html))
@@ -278,6 +264,6 @@ In Windows Phone, the underlying GeoLocator you can choose to use 'DesiredAccura
 
 ## Licence ##
 
-[Apache License](https://github.com/christocracy/cordova-plugin-background-geolocation/blob/master/LICENSE)
+[Apache License](https://github.com/ihadeed/cordova-plugin-background-geolocation/blob/master/LICENSE)
 
 Copyright (c) 2013 Christopher Scott, Transistor Software
